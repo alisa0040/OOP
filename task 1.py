@@ -1,4 +1,4 @@
-class Nobody():
+class Nobody(): # создаем класс NOBODY
 
     # принимающий при инициализации 1 параметр - name
     def __init__(self, name):
