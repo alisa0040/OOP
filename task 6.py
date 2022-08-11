@@ -1,7 +1,7 @@
 from dataclasses  import dataclass
 
-@dataclass
-class Person(order = True,frozen = True):
+@dataclass(order = True,frozen = True)
+class Person():
     name:str
     surname:str
     age:int
