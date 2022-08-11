@@ -1,28 +1,10 @@
 from dataclasses  import dataclass
 
 @dataclass
-class Person():
+class Person(order = True,frozen = True):
     name:str
     surname:str
     age:int
-
-    def __init__(self, name, surname, age):
-       self.__name = name
-       self.__surname = surname
-       self.__age = age
-
-    @property
-    def age(self):
-        return self.__age
-
-    @property
-    def name(self):
-        return self.__name
-
-    @property
-    def surname(self):
-        return self.__surname
-
 
 
 liza = Person(name='liza', surname='kohanchik', age=20)
