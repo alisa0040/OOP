@@ -1,21 +1,16 @@
 class Nobody(): # создаем класс NOBODY
-
+    
     # принимающий при инициализации 1 параметр - name
     def __init__(self, name):
-        self.name = name
-
-    def get_name(self):
-        #проверяем если параметр будет равен Nobody
-        if self.name != 'Nobody':
-
-           # Если значение отличается сохранить
-           #  I'm Nobody, not <name>
-            print(f'I m Nobody, not {self.name}')
+        
+        # проверяем если параметр будет равен Nobody
+        if name == 'Nobody':
+              self.name =' Nobody'
+              
+              # Если значение отличается сохранить
+              #  I'm Nobody, not <name>
         else:
-            return self.name
+              self.name = 'I m Nobody, not ' + str(name)
 
-Tom = Nobody('Tom') # обьект класса
-rik = Nobody('Nobody') # обьект класса
-
-rik.get_name()
-Tom.get_name()
+people = Nobody('Tom') # обьект класса
+print(people.name)
